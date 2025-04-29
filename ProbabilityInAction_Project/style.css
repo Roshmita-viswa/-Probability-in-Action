@@ -1,0 +1,29 @@
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+  padding: 20px;
+  background-color: #fff;
+}
+h1 {
+  color: #000;
+}
+.container {
+  display: flex;
+  gap: 30px;
+}
+.game {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+button {
+  margin: 5px 0;
+}
+.reset-btn {
+  background-color: #ff7058;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

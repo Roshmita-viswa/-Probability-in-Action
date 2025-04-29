@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Probability in Action</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Probability in Action: Predicting the Unpredictable!</h1>
+  <div class="container">
+    <div class="game">
+      <h4>Coin Toss</h4>
+      <button onclick="tossCoin()">Toss the Coin</button>
+      <p id="coinScore">Heads: 0 | Tails: 0</p>
+      <p>Last 5 Tosses:</p>
+      <ul id="coinHistory"></ul>
+      <canvas id="coinChart" width="250" height="250"></canvas>
+      <button class="reset-btn" onclick="resetCoin()">Reset Toss Data</button>
+    </div>
+
+    <div class="game">
+      <h4>Dice Roll</h4>
+      <button onclick="rollDice()">Roll the Dice</button>
+      <p>Last 5 Rolls:</p>
+      <ul id="diceHistory"></ul>
+      <canvas id="diceChart" width="250" height="250"></canvas>
+      <button class="reset-btn" onclick="resetDice()">Reset Dice Data</button>
+    </div>
+  </div>
+
+  <audio id="dingSound" src="correct.mp3" preload="auto"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
